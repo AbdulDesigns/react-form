@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/inputStyles.css";
 
 const Input = ({ labelName, name, id, placeholder, type }) => {
+  const [inputText, setInputText] = useState("");
+
+  //input data handler
+  const inputDataHandler = (e) => {
+    const valueUpdater = e.target.value;
+    setInputText(valueUpdater);
+  };
+
   return (
     <>
       <div className="inputContainer">
@@ -15,6 +23,7 @@ const Input = ({ labelName, name, id, placeholder, type }) => {
           name={name}
           id={id}
           placeholder={placeholder}
+          onChange={inputDataHandler}
         />
       </div>
     </>

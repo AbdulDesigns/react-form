@@ -4,7 +4,6 @@ import avatar from "../images/avatar.png";
 import "../styles/inputStyles.css";
 
 const FormContainer = () => {
-  const [inputText, setInputText] = useState("");
   return (
     <>
       <div className="mainContainer">
@@ -14,7 +13,7 @@ const FormContainer = () => {
           <img src={avatar} alt="avatar" />
           <h3>Payment Info</h3>
         </div>
-        <form action="#">
+        <form action="post.php" method="post">
           <Input
             labelName="User Name"
             id="userName"
