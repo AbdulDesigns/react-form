@@ -1,0 +1,89 @@
+.label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 2px;
+  font-weight: 400;
+  padding: 4px;
+}
+
+.textInput {
+  width: 100%;
+  display: block;
+  padding: 8px;
+  border: 1px solid #9ea8bd;
+  border-radius: 8px;
+  color: #9ea8bd;
+  background-color: #e2e6ee;
+  font-size: 16px;
+}
+
+.inputContainer {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.inputContainer input:focus {
+  box-shadow: 0px 4px 18px rgba(158, 168, 189, 0.31);
+  background-color: white;
+  outline: none;
+  transition: all 0.2s ease-out;
+  border: 1px solid #9ea8bd;
+  color: black;
+}
+.mainContainer {
+  width: 360px;
+  height: 510px;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0px 4px 20px rgba(77, 166, 186, 0.38);
+  border-radius: 24px;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #82ccdd;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.heading img {
+  width: 104px;
+  margin-bottom: 4px;
+}
+
+.mainContainer button {
+  padding: 12px 24px;
+  width: 100%;
+  height: 40px;
+  margin-top: 24px;
+  background-color: #2caad7;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+}
+
+.mainContainer button:focus {
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.inputCombo {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
