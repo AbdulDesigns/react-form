@@ -3,7 +3,7 @@ import Input from "./Input";
 import avatar from "../images/avatar.png";
 import "../styles/inputStyles.css";
 
-const FormContainer = () => {
+const FormContainer = ({ submitHandler }) => {
   return (
     <>
       <div className="mainContainer">
@@ -13,7 +13,7 @@ const FormContainer = () => {
           <img src={avatar} alt="avatar" />
           <h3>Payment Info</h3>
         </div>
-        <form action="post.php" method="post">
+        <form>
           <Input
             labelName="User Name"
             id="userName"
